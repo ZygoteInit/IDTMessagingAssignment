@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IDTMessagingAssignment</string>
+
+    <string name="fetching_image">Fetching Image</string>
+</resources>

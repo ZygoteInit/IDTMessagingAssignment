@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:id="@+id/edtUrl"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="Enter the Image url"
+        android:padding="5dp"
+        android:inputType="textWebEditText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:text="Fetch"
+            android:id="@+id/btnFetch"
+            android:drawableRight="@android:drawable/ic_menu_camera"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:layout_weight="0.5"
+            android:id="@+id/btnRefresh"
+            android:drawableRight="@android:drawable/ic_delete"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imgFetched"
+        android:layout_margin="20dp"
+        android:layout_gravity="bottom" />
+</LinearLayout>
